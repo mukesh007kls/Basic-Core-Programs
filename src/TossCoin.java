@@ -5,6 +5,10 @@ public class TossCoin {
         System.out.println("Enter number of times to flip coin");
         Scanner sc = new Scanner(System.in);
         int numberOfTimesToFlip = sc.nextInt();
+        while(numberOfTimesToFlip<0){
+            System.out.println("Enter a positive number:-");
+            numberOfTimesToFlip=sc.nextInt();
+        }
         double numberOfTimeTails = 0;
         double numberOfTimeHeads = 0;
 
@@ -27,4 +31,3 @@ public class TossCoin {
 
     }
     }
-}
